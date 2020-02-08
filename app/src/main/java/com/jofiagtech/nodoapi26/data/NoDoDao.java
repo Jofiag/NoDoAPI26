@@ -1,5 +1,6 @@
 package com.jofiagtech.nodoapi26.data;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
@@ -15,7 +16,7 @@ public interface NoDoDao {
     void insert(NoDo noDo);
 
     @Query("SELECT * FROM noDo_table ORDER BY noDo_column DESC")
-    List<NoDo> getAllItem();
+    LiveData<List<NoDo>> getAllItem();
 
     @Query("UPDATE noDo_table SET noDo_column = :newNodoText WHERE id = :id")
     void updateItem(int id, String newNodoText);

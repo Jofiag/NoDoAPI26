@@ -18,6 +18,7 @@ public abstract class NoDoRoomDatabase  extends RoomDatabase {
         if (INSTANCE == null){
             synchronized (NoDoRoomDatabase.class){
                 if (INSTANCE == null){
+                    //Create the db
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             NoDoRoomDatabase.class, "noDo_datatbase")
                             .build();
