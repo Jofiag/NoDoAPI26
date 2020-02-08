@@ -14,7 +14,7 @@ public abstract class NoDoRoomDatabase  extends RoomDatabase {
     private static volatile NoDoRoomDatabase INSTANCE;
     public abstract NoDoDao noDoDao();
 
-    static NoDoRoomDatabase getDatabase(Context context){
+    public static NoDoRoomDatabase getDatabase(Context context){
         if (INSTANCE == null){
             synchronized (NoDoRoomDatabase.class){
                 if (INSTANCE == null){
