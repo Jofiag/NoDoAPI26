@@ -22,6 +22,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public RecyclerViewAdapter(Context context) {
         mContext = context;
+        mLayoutInflater = LayoutInflater.from(context);
     }
 
     @NonNull
@@ -40,6 +41,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         }
         else
             holder.noDoText.setText(R.string.empty_text);
+    }
+
+    public void setNoDoList(List<NoDo> noDos) {
+        mNoDoList = noDos;
+        notifyDataSetChanged();
     }
 
     @Override
