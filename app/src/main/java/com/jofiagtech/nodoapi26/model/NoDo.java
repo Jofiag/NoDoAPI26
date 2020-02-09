@@ -27,7 +27,7 @@ public class NoDo {
         this.id = id;
     }
 
-    public String getNoDo() {
+    public String getNoDoText() {
         return noDo;
     }
 
