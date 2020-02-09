@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerViewAdapter mAdapter;
     private NoDoViewModel mNoDoViewModel;
-    private List<NoDo> mNoDoList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

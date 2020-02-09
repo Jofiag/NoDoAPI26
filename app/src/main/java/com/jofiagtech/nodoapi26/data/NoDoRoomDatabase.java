@@ -51,14 +51,14 @@ public abstract class NoDoRoomDatabase  extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            noDoDao.deleteAllItem();
 
-            //Test
+            /*//Test
+            noDoDao.deleteAllItem();
             NoDo noDo = new NoDo("Be friend with Satira's mom");
             noDoDao.insert(noDo);
 
             noDo = new NoDo("Love her again");
-            noDoDao.insert(noDo);
+            noDoDao.insert(noDo);*/
 
             return null;
         }
