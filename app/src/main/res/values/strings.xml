@@ -2,4 +2,6 @@
     <string name="app_name">NoDoAPI26</string>
     <string name="action_settings">Settings</string>
     <string name="empty_text">Empty file</string>
+    <string name="nodo_hint">Enter a nodo text</string>
+    <string name="save_text">save</string>
 </resources>
