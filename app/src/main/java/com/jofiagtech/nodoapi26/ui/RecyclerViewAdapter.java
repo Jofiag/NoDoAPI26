@@ -36,8 +36,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(@NonNull RecyclerViewAdapter.ViewHolder holder, int position) {
         if (mNoDoList != null){
             NoDo noDo = mNoDoList.get(position);
-            holder.noDoText.setText(noDo.getNoDoText());
+            holder.noDoText.setText(noDo.getNoDo());
         }
+        else
+            holder.noDoText.setText(R.string.empty_text);
     }
 
     @Override
